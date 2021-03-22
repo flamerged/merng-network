@@ -5,7 +5,12 @@
   "author": "flamerged",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -r dotenv/config.js --exec babel-node index.js"
+    "build-babel": "babel -d ./build ./src/ -s",
+    "clean": "rm -rf build && mkdir build",
+    "build": "yarn clean && yarn build-babel",
+    "start": "yarn build && node -r dotenv/config.js ./build/index.js",
+    "start-server": "node ./build/index.js",
+    "dev": "nodemon -r dotenv/config.js --exec babel-node ./src/index.js"
   },
   "dependencies": {
     "apollo-server": "^2.21.2",
