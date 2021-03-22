@@ -2,7 +2,7 @@ import { ApolloServer } from "apollo-server";
 import gql from "graphql-tag";
 import mongoose from "mongoose";
 
-import Post from "./models/Post.js";
+import { Post } from "./models/Post.js";
 
 const typeDefs = gql`
   type Post {

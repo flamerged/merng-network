@@ -1,5 +1,5 @@
 import { model, Schema } from "mongoose";
-import User from "./User.js";
+import { User } from "./User.js";
 
 const postSchema = new Schema({
   body: String,
