@@ -5,12 +5,19 @@
   "author": "flamerged",
   "license": "MIT",
   "scripts": {
-    "start": "node -r dotenv/config.js index.js"
+    "start": "nodemon -r dotenv/config.js --exec babel-node index.js"
   },
   "dependencies": {
     "apollo-server": "^2.21.2",
     "dotenv": "^8.2.0",
     "graphql": "^15.5.0",
     "mongoose": "^5.12.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.12",
+    "@babel/preset-env": "^7.13.12",
+    "nodemon": "^2.0.7"
   }
 }
