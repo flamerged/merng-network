@@ -2,7 +2,7 @@
   "name": "merng-network",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Mersad Ajanovic <mersad.ajanovic@googlemail.com>",
+  "author": "flamerged",
   "license": "MIT",
   "scripts": {
     "start": "node -r dotenv/config.js index.js"
