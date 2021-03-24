@@ -5,6 +5,9 @@ const resolvers = {
   Query: {
     ...postsResolvers.Query,
   },
+  Mutation: {
+    ...usersResolvers.Mutation,
+  },
 };
 
 export default resolvers;
